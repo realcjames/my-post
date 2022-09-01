@@ -1,0 +1,44 @@
+### 需求分析
+
+- 三个页面：list、create、edit
+- list页面：
+    - UI：
+        - 标题
+        - link to your profile
+        - tab切换（吸顶todo）
+        - post
+            - head：标题、横线、edit、del
+            - content
+            - 底部时间
+            - last modified（todo）
+        - 跳转至create页面的按钮
+    - 功能：
+        - 复制链接（todo）
+        - 加载post列表
+        - 跳转至create页
+        - 跳转至edit页
+        - 删除post
+        - tab切换（todo）
+        - 滚动至底部加载更多（todo）
+- create页面：
+    - UI：
+        - 标题
+        - post标题输入框
+        - post主体内容编辑器
+        - 提交按钮
+        - 返回上一页按钮
+    - 功能：
+        - 新增保存post
+        - 返回上一页
+        - 保存草稿（todo）
+- edit页面：
+    - UI：
+        - 标题
+        - post标题输入框
+        - post主体内容编辑器
+        - 保存按钮
+        - 取消按钮
+    - 功能：
+        - 保存编辑post
+        - 取消并返回上一页
+        - 保存草稿（todo）
