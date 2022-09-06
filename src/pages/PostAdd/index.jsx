@@ -17,12 +17,13 @@ export default function PostAdd() {
     function handleAddPost(post) {
         // TODO 非空检查 + 提示
         const postList = getStore('postList') || []
+        const len = postList.length
         setStore('postList',
             [...postList, {
                 id: uuid(),
                 ...post,
-                isEditable: true,
-                isDeletable: true,
+                isEditable: len % 4 === 0 || len % 4 === 1,
+                isDeletable: len % 4 === 0 || len % 4 === 2,
                 createTime: Date.now()
             }])
 
