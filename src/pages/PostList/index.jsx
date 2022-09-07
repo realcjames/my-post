@@ -6,6 +6,7 @@ import PostItem from './PostItem';
 import ToCreate from './ToCreate';
 import { setStore, getStore } from '../../utils/store'
 import { useNavigate } from 'react-router-dom';
+import CaptchaButton from '../../components/CaptchaButton';
 
 const link = 'https://twitter.com/p/12345'
 
@@ -39,6 +40,7 @@ export default function PostList() {
             <SwitchTab postCount={postList.length} />
             {postList && postList.map(post => <PostItem post={post} key={post.id} handleEditBtnClick={handleEditBtnClick} handleDeleteBtnClick={handleDelPost} />)}
             <ToCreate />
+            <CaptchaButton />
         </div>
     )
 }
